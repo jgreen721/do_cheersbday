@@ -47,11 +47,11 @@
       </div>
 
       <div class="beermugtwo">
-        <div class="froth-top">
+        <!-- <div class="froth-top">
           <div class="froth-1"></div>
           <div class="froth-2"></div>
           <div class="froth-3"></div>
-        </div>
+        </div> -->
 
         <div class="beermug-parent-outer-div">
           <div class="beermug-parent-inner-div">
@@ -66,52 +66,52 @@
     </div>
 
     <script>
-      let answer = confirm("Want the painful (count) reminder 😎?");
+      //   let answer = confirm("Want the painful (count) reminder 😎?");
 
-      if (answer) {
-        let bdays = {
-          21: "st",
-          22: "nd",
-          23: "rd",
-          24: "th",
-          25: "th",
-          26: "th",
-          27: "th",
-          28: "th",
-          29: "th",
-          30: "th",
-          31: "st",
-          32: "nd",
-          33: "rd",
-          34: "th",
-          35: "th",
-          36: "th",
-          37: "th",
-          38: "th",
-          39: "th",
-          40: "th",
-          41: "st",
-          42: "WTF?!",
-        };
+      //   if (answer) {
+      //     let bdays = {
+      //       21: "st",
+      //       22: "nd",
+      //       23: "rd",
+      //       24: "th",
+      //       25: "th",
+      //       26: "th",
+      //       27: "th",
+      //       28: "th",
+      //       29: "th",
+      //       30: "th",
+      //       31: "st",
+      //       32: "nd",
+      //       33: "rd",
+      //       34: "th",
+      //       35: "th",
+      //       36: "th",
+      //       37: "th",
+      //       38: "th",
+      //       39: "th",
+      //       40: "th",
+      //       41: "st",
+      //       42: "WTF?!",
+      //     };
 
-        for (let i = 21; i < 44; i++) {
-          setTimeout(
-            () => {
-              if (i < 42) {
-                document.querySelector(".number").innerHTML = `${i}${bdays[i]}`;
-              } else {
-                document.querySelector(".number").innerHTML = `WTF?!`;
-                setTimeout(() => {
-                  document.querySelector(".number").innerHTML = "41st 😎";
-                }, 1500);
-              }
-            },
-            i < 42 ? i * 200 : i * 1200
-          );
-        }
-      } else {
-        document.querySelector(".number").innerHTML = "";
-      }
+      //     for (let i = 21; i < 44; i++) {
+      //       setTimeout(
+      //         () => {
+      //           if (i < 42) {
+      //             document.querySelector(".number").innerHTML = `${i}${bdays[i]}`;
+      //           } else {
+      //             document.querySelector(".number").innerHTML = `WTF?!`;
+      //             setTimeout(() => {
+      //               document.querySelector(".number").innerHTML = "41st 😎";
+      //             }, 1500);
+      //           }
+      //         },
+      //         i < 42 ? i * 200 : i * 1200
+      //       );
+      //     }
+      //   } else {
+      //     document.querySelector(".number").innerHTML = "";
+      //   }
     </script>
   </body>
 </html>
