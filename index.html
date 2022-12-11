@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Happy 41st Bday</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header-div">
+        <h1 class="header-h1">
+          Happy <span class="number"></span> Birthday
+          <span class="clover">☘️</span>
+        </h1>
+      </div>
+
+      <!-- <div class="beermug-parent">
+        <div class="beertap"></div>
+        <div class="beermug-div">
+          <div class="beermug-top"></div>
+          <div class="beer-sides">
+            <div class="froth-div">
+              <div class="froth-1"></div>
+              <div class="froth-2"></div>
+              <div class="froth-3"></div>
+            </div>
+            <div class="beer-side one"></div>
+            <div class="beer-side two"></div>
+          </div>
+
+          <div class="beermug-bottom"></div>
+        </div>
+      </div> -->
+
+      <div class="froth-top">
+        <div class="froth-1"></div>
+        <div class="froth-2"></div>
+        <div class="froth-3"></div>
+      </div>
+
+      <div class="beermug-parent-outer-div">
+        <div class="beermug-parent-inner-div">
+          <div class="froth"></div>
+        </div>
+      </div>
+
+      <div class="beermugtwo">
+        <div class="froth-top">
+          <div class="froth-1"></div>
+          <div class="froth-2"></div>
+          <div class="froth-3"></div>
+        </div>
+
+        <div class="beermug-parent-outer-div">
+          <div class="beermug-parent-inner-div">
+            <div class="froth"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <h3 class="footer-blurb">GrenDawg&copy;</h3>
+      </div>
+    </div>
+
+    <script>
+      let answer = confirm("Want the painful (count) reminder 😎?");
+
+      if (answer) {
+        let bdays = {
+          21: "st",
+          22: "nd",
+          23: "rd",
+          24: "th",
+          25: "th",
+          26: "th",
+          27: "th",
+          28: "th",
+          29: "th",
+          30: "th",
+          31: "st",
+          32: "nd",
+          33: "rd",
+          34: "th",
+          35: "th",
+          36: "th",
+          37: "th",
+          38: "th",
+          39: "th",
+          40: "th",
+          41: "st",
+          42: "WTF?!",
+        };
+
+        for (let i = 21; i < 44; i++) {
+          setTimeout(
+            () => {
+              if (i < 42) {
+                document.querySelector(".number").innerHTML = `${i}${bdays[i]}`;
+              } else {
+                document.querySelector(".number").innerHTML = `WTF?!`;
+                setTimeout(() => {
+                  document.querySelector(".number").innerHTML = "41st 😎";
+                }, 1500);
+              }
+            },
+            i < 42 ? i * 200 : i * 1200
+          );
+        }
+      } else {
+        document.querySelector(".number").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
